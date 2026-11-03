@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #f3efe4;
+  --color-ink: #1c1915;
+  --color-muted: #5e584c;
+  --color-line: #ddd4c3;
+  --color-card: #fbf8f1;
+  --color-accent: #0e4c5c;
+  --color-clay: #9a4632;
+  --color-good: #1d6b45;
+  --color-bad: #8d2e2e;
+  --font-sans: "Segoe UI", Candara, "Trebuchet MS", sans-serif;
+  --font-serif: "Palatino Linotype", Palatino, Georgia, serif;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+.serif {
+  font-family: var(--font-serif);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.formula-display {
+  overflow-x: auto;
+  padding: 0.35rem 0;
+}
+
+.formula-display .katex-display {
+  margin: 0.2rem 0;
+}
+
+.math-fallback {
+  font-family: ui-monospace, Consolas, monospace;
+  font-size: 0.95em;
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  background: white;
+  padding: 0.5rem 0.75rem;
+  z-index: 20;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
